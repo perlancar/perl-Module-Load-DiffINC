@@ -16,7 +16,7 @@ sub import {
         print "-$k\t$INC0{$k}\n";
     }
     for my $k (sort keys %INC) {
-        next if exists $IN0C{$k};
+        next if exists $INC0{$k};
         print "+$k\t$INC{$k}\n";
     }
 }
@@ -32,7 +32,6 @@ On the command-line:
  +Log/ger.pm     /home/ujang/perl5/perlbrew/perls/perl-5.26.0/lib/site_perl/5.26.0/Log/ger.pm
  +Log/ger/Heavy.pm       /home/ujang/perl5/perlbrew/perls/perl-5.26.0/lib/site_perl/5.26.0/Log/ger/Heavy.pm
  +Log/ger/Util.pm        /home/ujang/perl5/perlbrew/perls/perl-5.26.0/lib/site_perl/5.26.0/Log/ger/Util.pm
- +Module/Load/DiffINC.pm lib/Module/Load/DiffINC.pm
  +strict.pm      /home/ujang/perl5/perlbrew/perls/perl-5.26.0/lib/5.26.0/strict.pm
  +warnings.pm    /home/ujang/perl5/perlbrew/perls/perl-5.26.0/lib/5.26.0/warnings.pm
 
